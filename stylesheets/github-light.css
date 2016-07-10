@@ -1,124 +1,88 @@
-/*
-The MIT License (MIT)
-
-Copyright (c) 2016 GitHub, Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-*/
-
-.pl-c /* comment */ {
-  color: #969896;
+@charset "utf-8";
+div {
+	display: block;
 }
-
-.pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
-.pl-s .pl-v /* string variable */ {
-  color: #0086b3;
+.center {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 50px 35px;
+	box-sizing: border-box;
 }
-
-.pl-e /* entity */,
-.pl-en /* entity.name */ {
-  color: #795da3;
+#header, #main, #footer, #main {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.5);
 }
-
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */ {
-  color: #333;
+.banner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: rgba(0, 0, 0, .8);
+	display: table;
+	height: 220;
+	color: #189DBF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	padding: 70px 0;
+	font-size: 40px;
+	line-height: 50px;
 }
-
-.pl-ent /* entity.name.tag */ {
-  color: #63a35c;
+#nav-wrapper {
+	display: table;
+	width: 100%;
 }
-
-.pl-k /* keyword, storage, storage.type */ {
-  color: #a71d5d;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	width: 100%;
 }
-
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #183691;
+li {
+	float: left;
+	color: #000000;
 }
-
-.pl-v /* variable */ {
-  color: #ed6a43;
+li a {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	/*EXAMPLE OF DISPLAY PROPERTY*/
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #0C173F;
 }
-
-.pl-id /* invalid.deprecated */ {
-  color: #b52a1d;
+li a:hover:not(.active) {
+	background-color: #189DBF;
 }
-
-.pl-ii /* invalid.illegal */ {
-  color: #f8f8f8;
-  background-color: #b52a1d;
+.active {
+	background-color: #189DBF;
 }
-
-.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #63a35c;
+#body {
+	background-color: grey;
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 50px 35px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
-
-.pl-ml /* markup.list */ {
-  color: #693a17;
+.maincontent1 {
+	float: left;
+	padding:20px;
 }
-
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */ {
-  font-weight: bold;
-  color: #1d3e81;
+.maincontent2 {
+	float: right;
+	padding: 20px;
 }
-
-.pl-mq /* markup.quote */ {
-  color: #008080;
+.main {
+	width: 100%;
+	height: 303;
 }
-
-.pl-mi /* markup.italic */ {
-  font-style: italic;
-  color: #333;
-}
-
-.pl-mb /* markup.bold */ {
-  font-weight: bold;
-  color: #333;
-}
-
-.pl-md /* markup.deleted, meta.diff.header.from-file */ {
-  color: #bd2c00;
-  background-color: #ffecec;
-}
-
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file */ {
-  color: #55a532;
-  background-color: #eaffea;
-}
-
-.pl-mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #795da3;
-}
-
-.pl-mo /* meta.output */ {
-  color: #1d3e81;
-}
-
